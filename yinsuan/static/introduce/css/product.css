@@ -1,0 +1,148 @@
+.product_list a {
+	text-underline: none;
+	color: #2b2b2c;
+}
+
+ul {
+	padding-left: 0;
+}
+
+@media screen and (min-width:1200px) {
+	.product_list {
+		width: 360px;
+		display: none;
+		position: absolute;
+		right: 0;
+		top: 0;
+		background: #fff;
+		line-height: normal;
+		font-size: 16px;
+		border-left: 1px solid #ddd;
+		border-bottom: 1px solid #ddd;
+		box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+		z-index: 3;
+	}
+}
+
+.close_btn {
+	cursor: pointer;
+}
+
+.backInRight .product_list {
+	display: block;
+}
+
+.product_list .icon-guanbi {
+	float: right;
+}
+
+.product_list .product_list_title {
+	height: 90px;
+	line-height: 90px;
+	padding: 0 20px;
+	box-sizing: border-box;
+	margin: 0;
+	font-size: 16px;
+	border-bottom: 1px solid #ddd;
+}
+
+.product_nav_list h3 {
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.product_nav {
+	padding: 0 20px;
+}
+
+.produte_title,
+.product_nav_title {
+	margin-left: 8px;
+}
+
+.product_nav_detail {
+	padding-left: 24px;
+	display: none;
+	overflow: hidden;
+
+}
+
+.product_nav_detail li {
+	margin-bottom: 20px;
+	list-style: none;
+}
+
+.product_nav_list.active .icon-dakai {
+	transform: rotate(180deg);
+}
+
+.product_nav_list.active .product_nav_detail {
+	border-bottom: 1px solid #d8d8d8;
+}
+
+.product_nav_list.active .product_nav_detail {
+	display: block;
+}
+
+
+
+
+@media screen and (max-width:1050px) {
+	.product_list .product_list_title {
+		display: none;
+	}
+
+	.product_nav_detail {
+		line-height: normal;
+		padding: 11px 15px;
+	}
+
+	.product_nav_list h3 {
+		height: auto;
+		line-height: normal;
+		padding: 11px 0;
+	}
+
+	.product_nav_list i {
+		display: none;
+	}
+
+	.product_nav_list.active .product_nav_detail {
+		border: 0;
+	}
+
+	.product_nav {
+		padding-left: 5%;
+	}
+
+	.product_nav_list {
+		position: relative;
+	}
+
+	.product_nav_list::after {
+		content: '';
+		width: 100%;
+		height: 1px;
+		background: #d4d4d4;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		-webkit-transform: scaleY(0.5);
+		transform: scaleY(0.5);
+		-webkit-transform-origin: 0 0;
+		transform-origin: 0 0;
+	}
+
+	.produte_title,
+	.product_nav_title {
+		margin-left: 0;
+
+	}
+}
+
+.product_list.animated {
+	-webkit-animation-duration: 0.4s;
+	animation-duration: 0.4s;
+}

@@ -1,0 +1,35 @@
+.qualification a{
+	color: #464646;
+	text-decoration: none;
+}
+
+.con_list_title .con_list_show{
+	float: right;
+	font-size: 14px;
+	
+}
+.con_list_show .iconfont{
+	 margin-left: 10px;
+	 font-size: 10px;
+	
+}
+.qualification_list img{
+	width: 100%;
+}
+.qualification_list p{
+	height: 100px;
+	background: #fff;
+	font-size: 16px;
+	padding-left: 30px;
+	padding-top: 30px;
+	box-sizing: border-box;
+}
+@media  screen and (max-width:1100px) {
+	.qualification_list p{
+		height:50px;
+		font-size: 14px;
+		padding-left: 10px;
+		padding-top: 10px;
+	}
+	
+}

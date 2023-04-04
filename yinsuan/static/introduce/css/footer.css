@@ -1,0 +1,86 @@
+#footer{
+	background: #1f2024;
+}
+
+#footer .footer_box{
+	width: 80%;
+	margin: 0 auto;
+	padding:26px 40px;
+	text-align: center;
+	border-bottom: 1px solid #424345;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.footer_list li{
+	list-style: none;
+	font-size: 12px;
+	line-height: 28px;
+}
+.footer_list li a{
+	color: #afb0b1;
+	text-decoration: none;
+}
+.footer_list h4{
+	color: #FFFFFF;
+	font-size: 14px;
+	height: 40px;
+	line-height: 40px;
+	margin: 0;
+}
+@media  (max-width:1200px) {
+	#footer .footer_box{
+		 width: 100%;
+	}
+
+}
+
+.copyright{
+	text-align: center;
+	font-size: 12px;
+	line-height: 18px;
+	margin-top: 14px;
+	margin-bottom: 40px;
+}
+.copyright .copyright_info{
+	margin: 0;
+	color: #878888;
+}
+.copyright .copyright_info span{
+	margin-left: 14px;
+}
+/* boostrap 五等分 */
+
+.col-xs-1-5,.col-sm-1-5,.col-md-1-5,.col-lg-1-5 {
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+}
+
+.col-xs-1-5 {
+  width: 20%;
+  float: left;
+}
+
+@media (min-width: 768px) {
+  .col-sm-1-5 {
+    width: 16%;
+    float: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-md-1-5 {
+    width:16%;
+    float: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-lg-1-5 {
+    width: 16%;
+    float: left;
+  }
+}
+

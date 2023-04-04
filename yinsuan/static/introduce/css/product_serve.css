@@ -1,0 +1,144 @@
+.product_serve a{
+	text-decoration: none;
+}
+.product_search_box{
+	position: relative;
+}
+.product_search_box .serve_search{
+	background: #fff;
+	padding-top: 32px;
+	position: relative;	
+	height:350px;
+}
+.product_search_box .serve_bg {
+	padding-right: 0;
+	height:350px;
+	width:400px;
+}
+.serve_bg img {
+	width:400px;
+	height:350px;
+	}
+.serve_search {
+	width:calc(100% - 400px);
+}
+@media  screen and (min-width:1050px) {
+	.product_search_box .serve_bg{
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		height: 100%;
+	}
+	
+}
+.product_search_box .serve_bg img{
+	width: 100%;
+	height: 100%;
+	z-index:0;
+}
+.serve_bg img{
+	width: 100%;
+	height: 100%;
+}
+.serve_txt {
+	position:absolute;
+	left: 8%;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	z-index:100;
+	color:#fff;
+}
+.serve_txt h3:after{
+	border-bottom:2px solid #fff;
+	width: 20px;
+}
+.serve_txt p {
+	color:#fff;
+	font-size:14px;
+	position:absolute;
+	left:0;
+	bottom:2%;
+}
+.serve_txt p a {
+	color:#fff;
+	padding-right:5px;
+}
+.serve_txt p i {
+	display:inline-block;
+	font-size:12px;
+	margin-right:5px;
+}
+.serve_search  li{
+	list-style: none;
+	font-size: 14px;
+}
+.serve_search  li a {
+	display:block;
+	text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+.pro_serve_search{
+	width: 100%;
+	height: 46px;
+	line-height: 46px;
+	border:1px solid #cccccc;
+	box-sizing: border-box;
+	padding-left: 10px;
+	
+}
+.serve_search_box{
+	position: relative;
+	
+}
+.serve_search_box .iconfont{
+	position: absolute;
+	right:16px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	color: #0065b3;
+	cursor: pointer;
+}
+
+.serve_search .row{
+	margin: 0;
+}
+.serve_search .sear_pro_list li{
+	margin-top: 30px;
+}
+.serve_search .sear_pro_list li .iconfont{
+	margin-right: 5px;
+}
+.serve_search .sear_pro_list {
+	margin-bottom: 50px;
+}
+
+
+@media  screen and (max-width:1050px) {
+	.product_search_box .serve_bg{
+		/* display: none; */
+		box-sizing:border-box;
+		padding-right:15px;
+		height: auto;
+		width:100%;
+	}
+	.serve_search {
+	width:100%;
+	}
+	.product_search_box .serve_search {	
+	height:100%;
+	}
+	.serve_search  li a {
+	display:block;
+	text-overflow:normal;
+    overflow:auto;
+    white-space:normal;
+    word-break : break-all;
+}
+	
+}
