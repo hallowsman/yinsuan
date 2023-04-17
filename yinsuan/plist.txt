@@ -1,0 +1,11 @@
+asgiref==3.6.0
+distlib==0.3.6
+Django==4.1.5
+django-cors-headers==3.14.0
+django-stdimage==6.0.1
+filelock==3.9.0
+Pillow==9.4.0
+platformdirs==2.6.2
+PyMySQL==1.0.2
+sqlparse==0.4.3
+virtualenv==20.17.1

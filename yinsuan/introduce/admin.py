@@ -13,12 +13,6 @@ admin.site.index_title = '后台主页'
 @admin.register(IndexBanner)
 class IndexBannerAdmin(admin.ModelAdmin):
     list_display = ('id', 'banner_title', 'image_img')
-    fields = ('banner_title','banner_brief','banner_img')
+    fields = ['banner_title','banner_brief','banner_img']
 
-    # def index_banner_image(self, obj):
-    #     return mark_safe('<img src="{url}" width="{width}" height={height} />'.format(
-    #         url=obj.banner_img.url,
-    #         width=100,
-    #         height=100,
-    #     )
-    #     )
+

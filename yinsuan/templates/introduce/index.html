@@ -768,12 +768,27 @@
     csslink.href = "/static/introduce/css/banner.css";
     head.appendChild(csslink);
 </script>
+
 <section id="banner" class="owl-carousel owl-theme owl-loaded">
+    {% for banner in  indexBanner_list %}
+
+        <div class="industry_item">
+            <div>{{ banner.banner_img }}</div>
+            <strong>{{ banner.id }}</strong>
+            <a target="_blank" rel="noopener noreferrer" href=''>
+                <img src='{{ MEDIA_URL }}{{ banner.banner_img }}' alt="{{ banner.banner_img }}">
+
+
+            </a>
+        </div>
+    {% endfor %}
+
     <div class="industry_item">
         <a target="_blank" rel="noopener noreferrer" href=''>
             <img src='/static/introduce/images/jmjj_966628686017699330.png'>
         </a>
     </div>
+
     <div class="industry_item">
         <a target="_blank" rel="noopener noreferrer" href=''>
             <img src='/static/introduce/images/zt1_808656783648384742.png'>
@@ -803,8 +818,8 @@
         <section class="row">
             <section class='col-lg-3 col-md-3 col-sm-6 col-xs-12 wow slideInUp gov_list'>
                 <a target="_blank" rel="noopener noreferrer"
-                   href='234188673880540039.html?no=cbf5d309f4f9ad34e7&id=476946204115243752'>
-                    <img src='/static/introduce/images/products/pro_02.jpg' alt="">
+                   href='#'>
+                    <img src='/static/introduce/images/pro_02.jpg' alt="">
                     <section class="list_info">
                         <h4>财政电子票据</h4>
                         <p>
@@ -815,8 +830,8 @@
             </section>
             <section class='col-lg-3 col-md-3 col-sm-6 col-xs-12 wow slideInUp gov_list'>
                 <a target="_blank" rel="noopener noreferrer"
-                   href='234188673880540039.html?no=cbf5d309f4f9ad34e7&id=476342327656699378'>
-                    <img src='/static/introduce/images/products/pro_01.jpg' alt="">
+                   href='#'>
+                    <img src='/static/introduce/images/pro_01.jpg' alt="">
                     <section class="list_info">
                         <h4>智慧电子税务局</h4>
                         <p>
@@ -827,8 +842,8 @@
             </section>
             <section class='col-lg-3 col-md-3 col-sm-6 col-xs-12 wow slideInUp gov_list'>
                 <a target="_blank" rel="noopener noreferrer"
-                   href='234188673880540039.html?no=8985733085b7ec5c40&id=509508034247956170'>
-                    <img src='/static/introduce/images/products/pro_03.jpg' alt="">
+                   href='#'>
+                    <img src='/static/introduce/images/pro_03.jpg' alt="">
                     <section class="list_info">
                         <h4>政务一体化平台</h4>
                         <p>
@@ -839,8 +854,8 @@
             </section>
             <section class='col-lg-3 col-md-3 col-sm-6 col-xs-12 wow slideInUp gov_list'>
                 <a target="_blank" rel="noopener noreferrer"
-                   href='234188673880540039.html?no=c83629b3607e0daa8c&id=283231096486900273'>
-                    <img src='/static/introduce/images/products/pro_04.jpg' alt="">
+                   href='#'>
+                    <img src='/static/introduce/images/pro_04.jpg' alt="">
                     <section class="list_info">
                         <h4>出入境智慧服务大厅解决方案</h4>
                         <p>
@@ -875,48 +890,48 @@
                 <h4>信息技术应用创新</h4>
                 <p></p>
                 <a target="_blank" rel="noopener noreferrer"
-                   href='234188673880540039.html?no=7b9bd164abb19dfc78&id=544186934221500000'>
+                   href=''>
                     了解更多
                     <i class="iconfont icon-xiayibu"></i>
                 </a>
             </div>
-            <img src='/static/introduce\uploadimages\1\1_562853142682603642.png'/>
+            <img src='/static/introduce/images/1_562853142682603642.png'/>
         </div>
         <div class="industry_item">
             <div class="industry_owl_title">
                 <h4>食品安全追溯监管平台</h4>
                 <p></p>
                 <a target="_blank" rel="noopener noreferrer"
-                   href='234188673880540039.html?no=5997ff34edf82abc8d&id=502853325109252723'>
+                   href=''>
                     了解更多
                     <i class="iconfont icon-xiayibu"></i>
                 </a>
             </div>
-            <img src='/static/introduce\uploadimages\1\1_1_562889202275568530.png'/>
+            <img src='/static/introduce/images/1_1_562889202275568530.png'/>
         </div>
         <div class="industry_item">
             <div class="industry_owl_title">
                 <h4>一网通办平台</h4>
                 <p></p>
                 <a target="_blank" rel="noopener noreferrer"
-                   href='313152066389001155.html?no=d90ad0f85515ccb77d&id=502913762098032089'>
+                   href=''>
                     了解更多
                     <i class="iconfont icon-xiayibu"></i>
                 </a>
             </div>
-            <img src='/static/introduce\uploadimages\1\2_562889202275568558.png'/>
+            <img src='/static/introduce/images/2_562889202275568558.png'/>
         </div>
         <div class="industry_item">
             <div class="industry_owl_title">
                 <h4>智慧政务全生态解决方案</h4>
                 <p></p>
                 <a target="_blank" rel="noopener noreferrer"
-                   href='234188673880540039.html?no=8985733085b7ec5c40&id=503240705975759582'>
+                   href=''>
                     了解更多
                     <i class="iconfont icon-xiayibu"></i>
                 </a>
             </div>
-            <img src='/static/introduce\uploadimages\1\6_562925143321651251.png'/>
+            <img src='/static/introduce/images/6_562925143321651251.png'/>
         </div>
     </div>
 </section>
