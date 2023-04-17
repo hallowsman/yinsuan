@@ -57,6 +57,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media'
             ],
         },
     },
@@ -109,13 +110,16 @@ USE_TZ = True
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
-#
 # ALLOWED_HOSTS = []
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 
 # 正式环境
 DEBUG = False
-
 ALLOWED_HOSTS = ['*']
+MEDIA_ROOT = os.path.join(BASE_DIR, '/var/www/yinsuan/static/media')
+
+MEDIA_URL = '/media/'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
@@ -124,11 +128,9 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = '/var/www/yinsuan/static/'
 
-# MEDIA_ROOT = os.path.join(BASE_DIR,'media')
-# MEDIA_URL = '/media/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, '/var/www/yinsuan/static/media')
-MEDIA_URL = '/media/'
+
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
